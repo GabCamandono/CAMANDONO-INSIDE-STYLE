@@ -541,6 +541,15 @@ border-radius: 1rem;
     color: var(--clr-primary);
 }
 
+/* Mobile Responsive | About Banner */
+@media screen and (max-width: 520px) {
+  .aboutBanner__img {
+    display: none;
+  }
+}
+  
+
+
 .aboutCatalog{
     padding-bottom: 4rem;
     padding-top: 5rem;
@@ -577,6 +586,17 @@ border-radius: 1rem;
   color: var(--clr-secondary);
   font-weight: 700;
 }
+
+/* Mobile Responsive | About Catalog */
+
+@media screen and (max-width: 520px) {
+  .aboutCatalog {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}  
+
+
 /* Catalog Page Banner */
 .catalogBanner {
   background: linear-gradient(
@@ -608,6 +628,13 @@ border-radius: 1rem;
   font-size: var(--h3);
   line-height: 2rem;
   text-align: center;  
+}
+
+@media screen and (max-width:520px){
+  .catalogBanner__wrapper
+  {
+    max-width: 520px;
+  }
 }
 
 /* Catalog Package */
