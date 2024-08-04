@@ -590,9 +590,9 @@ border-radius: 1rem;
 /* Mobile Responsive | About Catalog */
 
 @media screen and (max-width: 520px) {
-  .aboutCatalog {
-    flex-direction: column;
-    gap: 3rem;
+  .aboutCatalog__wrapper {
+    grid-template-columns: 1fr;
+    padding-left: 3rem;
   }
 }  
 
@@ -631,9 +631,8 @@ border-radius: 1rem;
 }
 
 @media screen and (max-width:520px){
-  .catalogBanner__wrapper
-  {
-    max-width: 520px;
+  .catalogBanner {
+
   }
 }
 
@@ -780,6 +779,25 @@ border-radius: 1rem;
   /* align-items: center; */
 }
 
+.contactPage__ph::placeholder {
+  font-family: var(--font-style);
+}
+
+.contactPage__ph {
+  background-color: var(--clr-tertiary);
+  border: 0;
+  border-bottom: 2px solid #808080;
+}
+
+.contactPage__it {
+  height: 4rem;
+}
+
+@media screen and (max-width:520px) {
+  .contactPage {
+    max-width: 520px;
+  }
+}
 
 /* Assets */
 .btn {
